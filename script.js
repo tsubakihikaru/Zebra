@@ -15,4 +15,24 @@ function showAccountSettings() {
     // Close the dropdown menu
     document.getElementById("account-menu").style.display = "none";
 }
+// This runs automatically when the site opens
+window.onload = function() {
+    let user = localStorage.getItem("zebraUser");
+
+    if (!user) {
+        // If no user is found, start them as a Guest
+        console.log("Welcome to Zebra! Entering Guest Mode...");
+        enterGuestMode();
+    } else {
+        showMemberFeed(user);
+    }
+};
+
+function enterGuestMode() {
+    // Change the profile button text to show they are a guest
+    document.querySelector('.profile-btn').innerText = "Guest Mode";
+    
+    // You can also hide certain things guests shouldn't do (like posting)
+    document.querySelector('.create-post-btn').style.display = 'none';
+}
 
