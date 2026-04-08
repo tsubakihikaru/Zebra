@@ -1,5 +1,5 @@
 .login-prompt {
-    text-align: center;
+    text-align: center;https://github.com/tsubakihikaru/Zebra/edit/main/style.css
     background: white;
     padding: 40px;
     border-radius: 12px;
@@ -24,3 +24,32 @@
 
 .google { background-color: #4285F4; color: white; }
 .hotmail { background-color: #0078d4; color: white; } /* Microsoft Blue */
+
+.user-profile {
+    position: relative;
+}
+
+.hidden-menu {
+    display: none; /* Keeps it hidden at start */
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.hidden-menu button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.hidden-menu button:hover {
+    background-color: #f0f2f5;
+}
