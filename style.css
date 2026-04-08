@@ -1,0 +1,26 @@
+.login-prompt {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.auth-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.btn {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.google { background-color: #4285F4; color: white; }
+.hotmail { background-color: #0078d4; color: white; } /* Microsoft Blue */
