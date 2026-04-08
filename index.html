@@ -17,3 +17,21 @@
         </div>
     </section>
 </main>
+<header>
+    <h1>Zebra</h1>
+    <div class="user-profile">
+        <!-- Click this to see the menu -->
+        <button onclick="toggleUserMenu()" class="profile-btn">User Profile</button>
+        
+        <!-- Hidden by default -->
+        <div id="account-menu" class="hidden-menu">
+            <button onclick="showAccountSettings()">Your account</button>
+        </div>
+    </div>
+</header>
+
+<!-- This section will be hidden until "Your account" is clicked -->
+<div id="account-settings-page" style="display:none;">
+    <h2>Account Settings</h2>
+    <button class="guest-btn" onclick="activateGuestMode()">Enter Guest Mode</button>
+</div>
