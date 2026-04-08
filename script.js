@@ -15,3 +15,4 @@ function showAccountSettings() {
     // Close the dropdown menu
     document.getElementById("account-menu").style.display = "none";
 }
+
