@@ -53,3 +53,32 @@
 .hidden-menu button:hover {
     background-color: #f0f2f5;
 }
+/* This centers everything and adds the "Zebra" feel */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.login-container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.google { background-color: white; color: #757575; }
+.hotmail { background-color: #0078d4; color: white; border: none; }
